@@ -101,3 +101,12 @@ def evalPostfix(expr):
         i+=1
     return s.top()
 
+def elimSpatiiMultiple(str):
+    i=0
+    while i < len(str):
+        if str[i]==' ':
+            j=i+1
+            while j<len(str) and str[j]==' ':
+                str=str[:j]+str[j+1:]
+        i+=1
+    return str
