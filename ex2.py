@@ -9,7 +9,10 @@ if __name__ == "__main__":
         if str[i] in punc:
             str = str[:i] + str[i+1:]
         i+=1
+
+    
     str=fn.elimSpatiiMultiple(str)
+    str="".join(filter(lambda c: c not in "1234567890",str))
 
     print(str)
 
